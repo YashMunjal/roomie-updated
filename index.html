@@ -8,6 +8,13 @@
     <meta name="description" content="FinnRooms-The best rooms/rentals/pg's for you.">
     <meta name="keywords" content="finnrooms,room-search,free-rooms,free-search">
     <title>FinnRooms</title>
+
+
+    <link href="css/vendor.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.0/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i%7cMontserrat:300,300i,400,400i,500,500i,600,600i,700,700i"
@@ -28,11 +35,16 @@
                     <a href="index.html"><img src="images/logo.png" alt="" class="logo-sizing"></a>
                 </div>
                 <div class="col-lg-8 col-md-4 col-sm-12 col-xs-12">
-                      <div class="navigation">
+                    <div class="navigation">
                         <div id="navigation">
                             <ul>
-                                <li class="active"><a href="index.html" title="Home">Home</a></li>
-                                <li ><a href="contact.html" title="contact">Contact us</a>
+                                <li class="active"><a href="index.html" title="Home"
+                                        style="font-size: 18px;font-weight: 500">Home</a></li>
+                                <li><a href="#" title="sign-in" style="font-size: 18px;font-weight: 500"
+                                        id="login-button">Sign in</a>
+                                <li><a href="#" title="contact" style="font-size: 18px;font-weight: 500">About Us</a>
+                                <li><a href="contact.html" title="contact"
+                                        style="font-size: 18px;font-weight: 500">Contact us</a>
                             </ul>
                         </div>
                     </div>
@@ -43,97 +55,68 @@
     <div class="hero-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="col-12">
                     <h1 class="hero-title">Find your perfect stay!</h1>
-                    <form class="col-md-12">
-                        <div class="input-group mt-3 mb-3">
-                            <div class="input-group-prepend">
-                                <button type="button" class="btn btn-outline-secondary dropdown-toggle"
-                                    data-toggle="dropdown">
-                                    Chandigarh
-                                </button>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">Chandigarh</a>
-                                    <a class="dropdown-item" href="#">Panchkula</a>
-                                    <a class="dropdown-item" href="#">Zirakpur</a>
-                                </div>
-                            </div>
+                </div>
 
-                            <input type="text" class="form-control" placeholder="Sector34,Sector 22.......">
-                            <div class="input-group-append">
-                                <span class="input-group-text">Let's Go</span>
-                            </div>
+                <div class="col-12">
+                    <div class="row row-content align-items-center">
+                        <div class="col-12 col-lg-3 text-center">
+                            <input class="form-control" type="text" placeholder="What would you like?">
                         </div>
-                    </form>
-
+                        <div class="col-12 col-lg-3 text-center">
+                            <input class="form-control" type="text" placeholder="City?">
+                        </div>
+                        <div class="col-12 col-lg-3 text-center">
+                            <select class="form-control">
+                                <option>Category?</option>
+                                <option>Category 1</option>
+                                <option>Category 2</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-lg-2 text-left">
+                            <input style="background-color: black;color:white" class="form-control" type="submit"
+                                value="Let's Go" placeholder="Let's Go?">
+                            <!--                            <button type="button" class="btn btn-outline-secondary">Let's Go</button>-->
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="space-medium">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-offset-2 col-md-8">
-                    <div class="mb60 text-center section-title">
-                        <h1>Find your ideal home away from home</h1>
-                        <h5 class="small-title ">we help you look for the best</h5>
-                    </div>
-                </div>
+
+
+
+    <div class="section-two">
+
+        <h1 class="background"><span>The FinnRoom Arena</span></h1>
+        <div class="wrap">
+
+            <div class="box one" data-aos="zoom-in">
+                <h1>Rooms</h1>
             </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <div class="service-block">
-                        <!-- service block -->
-                        <div class="service-icon mb20">
-                            <!-- service img -->
-                            <img src="images/new-room.jpg" height="100" width="100" alt="rooms"> </div>
-                        <!-- service img -->
-                        <div class="service-content">
-                            <!-- service content -->
-                            <h2><a href="# " class="title ">Rooms</a></h2>
-                            <p>Flats/Rooms/PG's, for you anytime.</p>
-                        </div>
-                        <!-- service content -->
-                    </div>
-                    <!-- /.service block -->
+            <div class="box two" data-aos="zoom-in">
+                <div class="date">
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <div class="service-block">
-                        <!-- service block -->
-                        <div class="service-icon mb20">
-                            <!-- service img -->
-                            <img src="images/food.jpg" alt="food" height="100" width="100"> </div>
-                        <!-- service img -->
-                        <div class="service-content">
-                            <!-- service content -->
-                            <h2><a href="#" class="title ">Food</a></h2>
-                            <p>Get personalized options right at your doorstep</p>
-                        </div>
-                        <!-- service content -->
-                    </div>
-                    <!-- /.service block -->
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <div class="service-block">
-                        <!-- service block -->
-                        <div class="service-icon mb20">
-                            <!-- service img -->
-                            <img src="images/laundry.jpg" height="100" width="100" alt=""> </div>
-                        <!-- service img -->
-                        <div class="service-content">
-                            <!-- service content -->
-                            <h2><a href="#" class="title ">Laundry</a></h2>
-                            <p>Never think about the laundry again</p>
-                        </div>
-                        <!-- service content -->
-                    </div>
-                    <!-- /.service block -->
-                </div>
-                <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 text-center"> <a href="#" class="btn btn-default">
-                        View All Service </a> </div>
+                <H1>Dinings</H1>
+            </div>
+            <div class="box three" data-aos="zoom-in">
+                <h1>Laundry</h1>
+            </div>
+            <div class="box four" data-aos="zoom-in">
+                <h1>Easy To Find</h1>
+            </div>
+            <div class="box five" data-aos="zoom-in">
+                <h1>All at One Place</h1>
+            </div>
+            <div class="box eight" data-aos="zoom-in">
+                <h1>Contact us</h1>
             </div>
         </div>
     </div>
+
+
+    <br><br><br>
     <div class="space-medium bg-default">
         <div class="container">
             <div class="row">
@@ -142,14 +125,15 @@
                 <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
                     <div class="well-block">
                         <h1>About us</h1>
-                        <p>FinnRooms.com started as a dream of providing the best and affordable housing and rental
-                            schemes to the </p>
-                        <p>FinnRooms.com started as a dream of providing the best and affordable housing and rental
-                            schemes to the </p>
-                        <p>FinnRooms.com started as a dream of providing the best and affordable housing and rental
-                            schemes to the </p>
-                        <p>FinnRooms.com started as a dream of providing the best and affordable housing and rental
-                            schemes to the </p>
+                        <p>FinnRooms solves the problem of Paying Guest service in Chandigarh for students.
+                            Usually PGs don’t serve food and laundry service up to marks for students. Even if they are
+                            providing these services, students aren’t able to find them easily. We are bringing PGs and
+                            students on a common platform to solve this problem.</p>
+                        <p>Students from distant places come to Chandigarh to prepare prestigious engineering or medical
+                            college entrance examination. The basic necessity of a human includes a roof, food and
+                            laundry service. At FinnRooms we are trying to solve these problems to improve the living
+                            condition for those students.</p>
+
                         <a href="# " class="btn btn-default">View More About us</a>
                     </div>
                 </div>
@@ -265,6 +249,28 @@
             </div>
         </div>
     </div>
+    <form action="#" id="login-form">
+        <div class="heading">Login to Finnrooms</div>
+        <div class="left">
+            <label for="email">Email</label> <br />
+            <input type="email" name="email" id="email" /> <br />
+            <label for="password">Password</label> <br />
+            <input type="password" name="password" id="pass" /> <br />
+            <input type="submit" value="Login" />
+        </div>
+        <div class="right">
+            <div class="connect">Connect with</div>
+            <a href="" class="facebook">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a> <br />
+            <a href="" class="twitter">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a> <br />
+            <a href="" class="google-plus">
+                <i class="fa fa-google-plus" aria-hidden="true"></i>
+            </a>
+        </div>
+    </form>
     <div class="footer">
         <!-- footer-->
         <div class="container">
@@ -340,6 +346,17 @@
     <!-- sticky header -->
     <script src="js/jquery.sticky.js"></script>
     <script src="js/sticky-header.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        var typed = new Typed('#typed', {
+            strings: ['Rooms', 'Laundry', 'Dining'],
+            typeSpeed: 140,
+            backSpeed: 110,
+            backDelay: 700,
+            loop: true,
+            loopCount: Infinity
+        })
+    </script>
 </body>
 
 </html>
