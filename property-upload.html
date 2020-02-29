@@ -14,11 +14,15 @@
         rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    
+  <link href="https://cdn.rawgit.com/t4t5/sweetalert/v0.2.0/lib/sweet-alert.css" rel="stylesheet">
+  <script src="https://cdn.rawgit.com/t4t5/sweetalert/v0.2.0/lib/sweet-alert.min.js"></script>
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js "></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js "></script>
 <![endif]-->
 </head>
+
 <body>
     <div class="header">
         <div class="container">
@@ -31,26 +35,7 @@
                         <div id="navigation">
                             <ul>
                                 <li class="active"><a href="index.html" title="Home">Home</a></li>
-                                <li class="has-sub"><a href="service-list.html" title="Service List">Service List</a>
-                                    <ul>
-                                        <li><a href="service-list.html" title="Service List">Service List</a></li>
-                                        <li><a href="service-detail.html" title="Service Detail">Service Detail</a></li>
-                                    </ul>
-                                </li>
-                                <li class="has-sub"><a href="blog-default.html" title="Blog ">News</a>
-                                    <ul>
-                                        <li><a href="blog-default.html" title="Blog">Blog Default</a></li>
-                                        <li><a href="blog-single.html" title="Blog Single ">Blog Single</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#" title="Features">Features</a>
-                                    <ul>
-                                        <li><a href="testimonial.html" title="Service List">Testimonial</a></li>
-                                        <li><a href="styleguide.html" title="Service Detail">Style Guide</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="contact.html" title="Contact Us">Contact</a> </li>
-                                <li><a href="styleguide.html" title="Styleguide">styleguide</a> </li>
+                                <li class="has-sub"><a href="contact.html" title="Service List">Contact us</a>
                             </ul>
                         </div>
                     </div>
@@ -63,11 +48,11 @@
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="page-caption">
-                        <h2 class="page-title">Property details</h2>
+                        <h2 class="page-title">Contact us</h2>
                         <div class="page-breadcrumb">
                             <ol class="breadcrumb">
                                 <li><a href="index.html">Home</a></li>
-                                <li class="active">4BHK flat</li>
+                                <li class="active">Contact us</li>
                             </ol>
                         </div>
                     </div>
@@ -75,3 +60,301 @@
             </div>
         </div>
     </div>
+    <div class="content">
+
+        <div class="container-fluid prop-upload">
+            <div class="row justify-content-center">
+                <div class="col-11 col-sm-9 col-md-7 col-lg-6 col-xl-5 text-center p-0 mt-3 mb-2">
+                    <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
+                        <h2 id="heading">Upload Property Here</h2>
+                        <p>All fields required</p>
+                        <form id="msform">
+                            <!-- progressbar -->
+                            <ul id="progressbar">
+                                <li class="active" id="basic"><strong>Basic Details</strong></li>
+                                <li id="owner"><strong>Owner Info</strong></li>
+                                <li id="pricing"><strong>Pricing</strong></li>
+                                <li id="features"><strong>Features</strong></li>
+                            </ul>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div> <br>
+                            <fieldset class="basic">
+                                <div class="form-card">
+                                    <div class="row">
+                                        <div class="col-7">
+                                            <h2 class="fs-title">Basic Details</h2>
+                                        </div>
+                                        <div class="col-5">
+                                            <h2 class="steps">1/4</h2>
+                                        </div>
+                                    </div> <label class="fieldlabels">Total Rooms<span class="req"> *</span></label>
+                                    <input type="Number" name="prop-total-rooms"
+                                        placeholder="Total number of rooms(Number Only)" /> <label
+                                        class="fieldlabels">Total Beds per Room<span class="req"> *</span></label>
+                                    <input type="number" name="Total-beds" placeholder="Total Beds per room" /><label
+                                        class="fieldlabels">Location
+                                        Address</label> <input type="text" name="address" placeholder="Address" /><label
+                                        class="fieldlabels">Property Area(in sq. feet)</label> <input type="text"
+                                        name="area" placeholder="Property Area" /><label
+                                        class="fieldlabels">Neighbourhood Details</label> <input type="text"
+                                        name="prop-neighbour" placeholder="Neighbourhood Details" /><label
+                                        class="fieldlabels">Upload Property Photo</label> <input type="file"
+                                        name="prop-pic" accept="image/" multiple>
+                                </div> <input type="button" name="next" class="next action-button next-to-owner"
+                                    value="Next" />
+                            </fieldset>
+                            <fieldset class="owner">
+                                <div class="form-card">
+                                    <div class="row">
+                                        <div class="col-7">
+                                            <h2 class="fs-title">Owner Info</h2>
+                                        </div>
+                                        <div class="col-5">
+                                            <h2 class="steps">2/4</h2>
+                                        </div>
+                                    </div><label class="fieldlabels">Owner Name<span class="req"> *</span></label>
+                                    <input type="text" name="prop-owner" placeholder="Owner Name" /> <label
+                                        class="fieldlabels">Owner Contact No.: *</label>
+                                    <input type="text" name="phno" placeholder="Contact No." /> <label
+                                        class="fieldlabels">Alternate Contact
+                                        No.: *</label> <input type="text" name="phno_2"
+                                        placeholder="Alternate Contact No." /><label class="fieldlabels">Upload Document
+                                        Proof (Aadhaar/Voter ID/Passport)</label> <input type="file" name="proof-pic"
+                                        accept="image/*">
+                                </div> <input type="button" name="next" class="next action-button next-to-pricing"
+                                    value="Next" /> <input type="button" name="previous"
+                                    class="previous action-button-previous prev-to-basic" value="Previous" />
+                            </fieldset>
+                            <fieldset class="pricing-upload">
+                                <div class="form-card">
+                                    <div class="row">
+                                        <div class="col-7">
+                                            <h2 class="fs-title">Pricing</h2>
+                                        </div>
+                                        <div class="col-5">
+                                            <h2 class="steps">3/4</h2>
+                                        </div>
+                                    </div> <label class="fieldlabels">Expected Rent(in rupees)<span class="req">
+                                            *</span></label> <input type="number" name="prop-rent"
+                                        placeholder="Expected Pricing" />
+                                    <div class="form-check-inline">
+                                        <label class="form-check-label fieldlabels">
+                                            <input type="checkbox" class="form-check-input" name="prop-elec">Electricity
+                                            Bill Included
+                                        </label>&nbsp;&nbsp;<label class="form-check-label fieldlabels">
+                                            <input type="checkbox" class="form-check-input" name="prop-water">Water Bill
+                                            Included
+                                        </label></div>
+                                    <label class="fieldlabels">Extra Charges expected(leave blank if no charges)</label>
+                                    <input type="text" name="prop-extra-charges"
+                                        placeholder="Extra chargin details here" />
+                                </div> <input type="button" name="next" class="next action-button next-to-amenities"
+                                    value="Submit" /> <input type="button" name="previous"
+                                    class="previous action-button-previous prev-to-owner" value="Previous" />
+                            </fieldset>
+                            <fieldset class="amenities">
+                                <div class="form-card">
+                                    <div class="row">
+                                        <div class="col-7">
+                                            <h2 class="fs-title">Amenities</h2>
+                                        </div>
+                                        <div class="col-5">
+                                            <h2 class="steps">3/4</h2>
+                                        </div>
+                                    </div>
+                                    <!----Amenities ---->
+
+                                    <div class="divTable prop-table">
+                                        <div class="divTableBody">
+                                            <div class="divTableRow">
+                                                <div class="divTableCell">Wifi</div>
+                                                <div class="divTableCell"><input type="checkbox"
+                                                        class="obsolete-checkbox" id="checkbox-wifi" />
+                                                    <label for="checkbox-wifi" class="full-checkbox">
+                                                        <div class="slider-wrapper">
+                                                            <div class="slider-options">
+                                                                <div class="slider-option slider-option-yes">Yes</div>
+                                                                <div class="slider-option-selector"></div>
+                                                                <div class="slider-option slider-option-no">No</div>
+                                                            </div>
+                                                        </div>
+                                                    </label></div>
+                                            </div>
+                                            <div class="divTableRow">
+                                                <div class="divTableCell">Food</div>
+                                                <div class="divTableCell"><input type="checkbox"
+                                                        class="obsolete-checkbox" id="checkbox-food" />
+                                                    <label for="checkbox-food" class="full-checkbox">
+                                                        <div class="slider-wrapper">
+                                                            <div class="slider-options">
+                                                                <div class="slider-option slider-option-yes">Yes</div>
+                                                                <div class="slider-option-selector"></div>
+                                                                <div class="slider-option slider-option-no">No</div>
+                                                            </div>
+                                                        </div>
+                                                    </label></div>
+                                            </div>
+                                            <div class="divTableRow">
+                                                <div class="divTableCell">AC</div>
+                                                <div class="divTableCell"><input type="checkbox"
+                                                        class="obsolete-checkbox" id="checkbox-ac" />
+                                                    <label for="checkbox-ac" class="full-checkbox">
+                                                        <div class="slider-wrapper">
+                                                            <div class="slider-options">
+                                                                <div class="slider-option slider-option-yes">Yes</div>
+                                                                <div class="slider-option-selector"></div>
+                                                                <div class="slider-option slider-option-no">No</div>
+                                                            </div>
+                                                        </div>
+                                                    </label></div>
+                                            </div>
+                                            <div class="divTableRow">
+                                                <div class="divTableCell">Flexible Timings</div>
+                                                <div class="divTableCell"><input type="checkbox"
+                                                        class="obsolete-checkbox" id="checkbox-timing" />
+                                                    <label for="checkbox-timing" class="full-checkbox">
+                                                        <div class="slider-wrapper">
+                                                            <div class="slider-options">
+                                                                <div class="slider-option slider-option-yes">Yes</div>
+                                                                <div class="slider-option-selector"></div>
+                                                                <div class="slider-option slider-option-no">No</div>
+                                                            </div>
+                                                        </div>
+                                                    </label></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!----Amenities ka sir dard----->
+                                </div> <input type="button" name="next" class="next action-button" id="final-submit"
+                                    value="Submit" /> <input type="button" name="previous"
+                                    class="previous action-button-previous prev-to-pricing" value="Previous" />
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <!-- footer-->
+        <div class="container">
+            <div class="footer-block">
+                <!-- footer block -->
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="footer-widget">
+                            <h2 class="widget-title">Office Address</h2>
+                            <ul class="listnone contact">
+                                <li><i class="fa fa-map-marker"></i>#111 Chandigarh,India </li>
+                                <li><i class="fa fa-phone"></i> +91 9876543210</li>
+                                <li><i class="fa fa-fax"></i> +91 987543210</li>
+                                <li><i class="fa fa-envelope-o"></i> info@finnrooms.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="footer-widget footer-social">
+                            <!-- social block -->
+                            <h2 class="widget-title">Social Feed</h2>
+                            <ul class="listnone">
+                                <li>
+                                    <a href="#"> <i class="fa fa-facebook"></i> Facebook </a>
+                                </li>
+                                <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i> Google Plus</a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i> Linked In</a></li>
+                                <li>
+                                    <a href="#"> <i class="fa fa-youtube"></i>Youtube</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.social block -->
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                        <div class="footer-widget widget-newsletter">
+                            <!-- newsletter block -->
+                            <h2 class="widget-title">Newsletters</h2>
+                            <p>Enter your email address to receive buzzing features.</p>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Email Address">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button">Subscribe</button>
+                                </span>
+                            </div>
+                            <!-- /input-group -->
+                        </div>
+                        <!-- newsletter block -->
+                    </div>
+                </div>
+                <div class="tiny-footer">
+                    <!-- tiny footer block -->
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="copyright-content">
+                                <p>© Finnrooms 2020 | all rights reserved</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.tiny footer block -->
+            </div>
+            <!-- /.footer block -->
+        </div>
+    </div>
+    <!-- /.footer-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/menumaker.js"></script>
+    <!-- sticky header -->
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/sticky-header.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        var fields= new Array('.basic','.owner','.pricing-upload','.amenities');
+
+$(document).ready(function(){
+$('.next-to-owner').click(function(){
+  $('.progress-bar').css("width","25%");
+  $(fields[0]).hide();
+  $(fields[1]).show();
+});
+$('.next-to-pricing').click(function(){
+  $('.progress-bar').css("width","50%");
+  $(fields[1]).hide();
+  $(fields[2]).show();
+});
+$('.next-to-amenities').click(function(){
+  $('.progress-bar').css("width","75%");
+  $(fields[2]).hide();
+  $(fields[3]).show();
+});
+$('.prev-to-pricing').click(function(){
+  $('.progress-bar').css("width","50%");
+  $(fields[3]).hide();
+  $(fields[2]).show();
+});
+$('.prev-to-owner').click(function(){
+  $('.progress-bar').css("width","25%");
+  $(fields[2]).hide();
+  $(fields[1]).show();
+});
+$('.prev-to-basic').click(function(){
+  $('.progress-bar').css("width","0%");
+  $(fields[1]).hide();
+  $(fields[0]).show();
+});
+$('#final-submit').click(function(){
+  $('.progress-bar').css("width","100%");
+  $(fields[3]).css("opacity","0");
+});
+
+});
+    </script>
+</body>
+
+</html>
