@@ -2351,9 +2351,9 @@ form#login-form {
     margin: 2em auto;
     overflow: hidden;
     position: fixed;
-    top:20vh;
-    left:30vw;
-    z-index:999;
+    top: 20vh;
+    left: 30vw;
+    z-index: 999;
     -moz-border-radius: 0.3em;
     -webkit-border-radius: 0.3em;
     border-radius: 0.3em;
@@ -2534,6 +2534,7 @@ div.right a.google-plus {
 div.right a.google-plus:hover {
     background: rgba(233, 84, 79, 0.8);
 }
+
 :root {
     --red-theme: rgb(116, 11, 8);
     --red-theme-light: rgba(116, 11, 8, 0.7)
@@ -2852,4 +2853,177 @@ input.obsolete-checkbox[type=checkbox]:checked+label .slider-options {
 .slider-option-no {
     color: #aaa;
     background: #ddd;
+}
+
+
+
+.login-login .login-signup {
+    padding: 0 0 25px;
+}
+
+.login-login .btn-success {
+    background: #aa9144;
+    border-radius: 0;
+    border: 2px solid #aa9144;
+    webkit-transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.login-login .btn-success:hover,
+.login-login .btn-success:focus {
+    background: rgba(26, 161, 157, 0);
+    border: 2px solid #1aa19d;
+    webkit-transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: #23bab5;
+}
+
+.login-login a {
+    color: #aa9144;
+}
+
+.login-login ul {
+    list-style-type: none;
+}
+
+.login-login article[role="login"] {
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 10px rgba(0, 0, 0, 0.24);
+    webkit-transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 30px 50px;
+    margin-bottom: 20px;
+}
+
+.login-login article[role="login"] input[type="submit"] {
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+.login-login article[role="login"]:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 1px 15px rgba(0, 0, 0, 0.23);
+    webkit-transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.login-login article[role="login"] h3 {
+    font-size: 26px;
+    font-weight: 300;
+    color: #23bab5;
+    margin-bottom: 20px;
+}
+
+.login-login article[role="login"] p {
+    font-size: 16px;
+    padding: 5px 15px;
+}
+
+.login-login .nav-tab-holder {
+    padding: 0 0 0 30px;
+    float: right;
+}
+
+.login-login .nav-tab-holder .nav-tabs {
+    border: 0;
+    float: none;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.login-login .nav-tab-holder .nav-tabs>li {
+    margin-bottom: -3px;
+    text-align: center;
+    padding: 0;
+    display: table-cell;
+    float: none;
+    padding: 0;
+}
+
+.login-login .nav-tab-holder .nav-tabs>li>a {
+    background: #d9d9d9;
+    color: #6c6c6c;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.login-login .nav-tab-holder .nav-tabs>li.active>a,
+.login-login .nav-tabs>li.active>a:hover,
+.login-login .nav-tabs>li.active>a:focus {
+    color: #fff;
+    background-color: #23bab5;
+    border: 0;
+    border-radius: 0;
+}
+
+.login-login .mobile-pull {
+    float: right;
+}
+
+.login-login article[role="manufacturer"] {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 10px rgba(0, 0, 0, 0.24);
+    padding: 0 0 40px;
+    max-width: 420px;
+    margin: -45px auto 0;
+}
+
+.login-login article[role="manufacturer"] header {
+    background: #23bab5;
+    color: #fff;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.login-login article[role="manufacturer"] h1 {
+    font-size: 26px;
+    font-weight: 300;
+    border-bottom: 1px solid #f2f2f2;
+    padding: 25px 15px;
+}
+
+.login-login article[role="manufacturer"] ul {
+    padding: 0 25px;
+}
+
+.login-login article[role="manufacturer"] ul li {
+    font-size: 16px;
+    border-bottom: 1px solid #eaeaea;
+    padding: 20px 15px;
+    color: #404040;
+}
+
+.login-login article[role="manufacturer"] ul li i {
+    color: #23bab5;
+}
+
+.login-login .login-signup {
+    padding: 0 0 25px;
+}
+
+@media only screen and (max-width: 767px) {
+    .login-login .mobile-pull {
+        float: none;
+    }
+
+    .login-login .nav-tab-holder {
+        float: none;
+        overflow: hidden;
+    }
+
+    .login-login .nav-tabs>li>a {
+        font-size: 13px;
+        font-weight: 600;
+        padding: 10px 5px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .login-login .nav-tabs>li {
+        width: 50%;
+    }
 }
