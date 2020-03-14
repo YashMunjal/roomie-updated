@@ -121,7 +121,7 @@ h1.background:before {
 }
 
 h1.background span {
-    background-color: #fff;
+/*    background-color: #fff;*/
     padding: 0 15px;
     font-size: 55px
 }
