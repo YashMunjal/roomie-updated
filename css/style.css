@@ -859,7 +859,7 @@ a img.aligncenter {
 }
 
 .hero-title {
-    font-size: 46px;
+    font-size: 66px;
     color: #fff;
     line-height: 58px;
     font-weight: 600;
@@ -2290,13 +2290,13 @@ address {
     }
 
     .hero-title {
-        font-size: 25px;
-        line-height: 40px
+        font-size: 36px;
+        line-height: 40px;
     }
 
     .hero-section {
         padding-top: 50px;
-        padding-bottom: 50px
+        padding-bottom: 50px;
     }
 
     .comment-info {
