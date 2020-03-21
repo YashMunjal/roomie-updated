@@ -495,7 +495,7 @@ ul {
 
 #msform .action-button {
     width: 100px;
-    background: var(--red-theme);
+    background-color: #aa9144;
     font-weight: bold;
     color: white;
     border: 0 none;
@@ -508,7 +508,7 @@ ul {
 
 #msform .action-button:hover,
 #msform .action-button:focus {
-    background-color: var(--red-theme)
+    background-color: #aa9144;
 }
 
 #msform .action-button-previous {
