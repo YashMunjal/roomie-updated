@@ -87,9 +87,6 @@
     }
 }
 
-.font-head>#typed {
-    color: var(--red-theme)
-}
 
 h1.background {
     position: relative;
@@ -100,19 +97,6 @@ h1.background {
     position: relative;
     height: 100%;
     width: 100%
-}
-
-h1.background:before {
-    border-top: 2px solid #dfdfdf;
-    content: "";
-    margin: 0 auto;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 95%;
-    z-index: -1
 }
 
 .section-two>h1 {
@@ -170,7 +154,7 @@ h1.background span {
     -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, .3);
     box-shadow: 0 0 15px rgba(0, 0, 0, .3);
 /*    background-color: var(--red-theme-light)*/
-    background-color: #A88D6B;
+    background-color: #654321;
     
 }
 

@@ -918,7 +918,7 @@ a img.aligncenter {
 
 #navigation.align-center>ul {
     font-size: 0;
-    text-align: center
+    text-align: center;
 }
 
 #navigation.align-center>ul>li {
@@ -927,11 +927,11 @@ a img.aligncenter {
 }
 
 #navigation.align-center ul ul {
-    text-align: left
+    text-align: left;
 }
 
 #navigation.align-right>ul>li {
-    float: right
+    float: right;
 }
 
 #navigation>ul>li>a {
@@ -1384,12 +1384,14 @@ a img.aligncenter {
 .about-text {
     line-height: 40px
 }
-
+.about{
+    background-color:#FFFBC7;
+}
 .about-contact {
     font-size: 18px;
     color: #8c9292;
     font-weight: 600;
-    margin-left: 5px
+    margin-left: 5px;
 }
 
 .counter_box {
@@ -2865,7 +2867,7 @@ input.obsolete-checkbox[type=checkbox]:checked+label .slider-options {
     background: #aa9144;
     border-radius: 0;
     border: 2px solid #aa9144;
-    webkit-transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -2873,7 +2875,7 @@ input.obsolete-checkbox[type=checkbox]:checked+label .slider-options {
 .login-login .btn-success:focus {
     background: rgba(26, 161, 157, 0);
     border: 2px solid #1aa19d;
-    webkit-transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
     color: #23bab5;
 }
@@ -2890,7 +2892,7 @@ input.obsolete-checkbox[type=checkbox]:checked+label .slider-options {
     background: #fff;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 10px rgba(0, 0, 0, 0.24);
-    webkit-transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 30px 50px;
     margin-bottom: 20px;
@@ -2904,7 +2906,7 @@ input.obsolete-checkbox[type=checkbox]:checked+label .slider-options {
 .login-login article[role="login"]:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 1px 15px rgba(0, 0, 0, 0.23);
-    webkit-transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
