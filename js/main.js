@@ -95,5 +95,13 @@ $(document).ready(function () {
     $(fields[3]).css("opacity","0");
   });
 
+  $("#loginl").click(function(){
+    $("#login").show();
+    $("#register").hide();
+  });
+  $("#registerl").click(function(){
+    $("#login").hide();
+    $("#register").show();
+  });
 });
 
